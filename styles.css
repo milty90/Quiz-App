@@ -42,7 +42,7 @@ main {
   justify-content: center;
   gap: 2rem;
 }
-.btn {
+.answer-btn {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
   background-color: #fff;
@@ -57,7 +57,44 @@ main {
   font-size: 1rem;
   margin: 10px;
   padding: 10px 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.answer-btn:hover {
+  animation: shake3856 0.3s linear infinite both;
+}
+
+@keyframes shake3856 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+
+  20% {
+    -webkit-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px);
+  }
+
+  40% {
+    -webkit-transform: translate(-1px, -1px);
+    transform: translate(-1px, -1px);
+  }
+
+  60% {
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px);
+  }
+
+  80% {
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px);
+  }
+
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
 .controls {
   width: 100%;
   margin-top: 3rem;
@@ -67,19 +104,51 @@ main {
   gap: 2rem;
 }
 .solution-btn,
-.next-btn {
-  font-family: "Source Sans 3", sans-serif;
-  font-optical-sizing: auto;
-  background-color: #fff;
-  font-size: 1rem;
-  color: #4e61c5;
+.next {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 40px;
   border: none;
-  border-radius: 8px;
-  font-weight: 500;
-  font-style: normal;
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
-  margin: 10px;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  background: linear-gradient(to right, #dff8ff, #ffffff);
+  color: #4e61c5;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 20px 30px -7px rgba(97, 118, 238, 0.5);
+  transition-duration: 0.3s;
+}
+
+.svg {
+  width: 12px;
+  position: absolute;
+  visibility: hidden;
+  right: 0;
+  margin-right: 20px;
+  fill: #4e61c5;
+  transition-duration: 0.3s;
+}
+
+.next:hover,
+.solution-btn:hover {
+  color: transparent;
+}
+
+.next:hover svg,
+.solution-btn:hover svg {
+  visibility: visible;
+  width: 16px;
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.3s;
+}
+.solution-btn:hover svg {
+  right: 40%;
+  width: 24px;
 }
