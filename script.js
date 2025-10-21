@@ -804,6 +804,9 @@ const questionArray = [
   },
 ];
 
+let answerIsTreu = false;
+let correctAnswer = 0;
+let answerButtonIsClicked = false;
 const quizContainer = document.createElement("div");
 const controlsContainer = document.createElement("div");
 const solutionButton = document.createElement("button");
@@ -817,7 +820,11 @@ nextButton.classList.add("next");
 solutionButton.innerText = "Lösung";
 nextButton.innerText = "Weiter";
 
+controlsContainer.appendChild(solutionButton);
+controlsContainer.appendChild(nextButton);
+
 function nextQuestion() {
+  answerButtonIsClicked = true;
   const randomIndex = Math.floor(Math.random() * questionArray.length);
 
   const question = document.createElement("h1");
@@ -827,6 +834,8 @@ function nextQuestion() {
     questionArray[Math.floor(randomIndex)].question
   );
   const answers = questionArray[Math.floor(randomIndex)].answers;
+  correctAnswer = questionArray[Math.floor(randomIndex)].correct;
+  console.log("Korrekte Antwort:", correctAnswer);
 
   for (let i = 0; i < answers.length; i++) {
     const answerOptionText = document.createTextNode(answers[i]);
@@ -834,7 +843,20 @@ function nextQuestion() {
     answerButton.appendChild(answerOptionText);
     answerButton.classList.add("answer-btn");
     answerContainer.appendChild(answerButton);
+    if (i === correctAnswer) {
+      console.log("Richtig");
+      answerIsTreu = true;
+      answerButton.addEventListener("click", () => {
+        answerButton.classList.add("correct");
+      });
+    } else {
+      console.log("Falsch");
+      answerButton.addEventListener("click", () => {
+        answerButton.classList.add("wrong");
+      });
+    }
   }
+  answerIsTreu = false;
 
   question.appendChild(questionText);
 
@@ -852,8 +874,14 @@ function nextQuestion() {
 function showSolution() {
   // Logic to show the solution
 }
-controlsContainer.appendChild(solutionButton);
-controlsContainer.appendChild(nextButton);
+
+nextButton.addEventListener("click", () => {
+  nextQuestion();
+});
+
+solutionButton.addEventListener("click", () => {
+  showSolution();
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   nextQuestion();
