@@ -825,11 +825,15 @@ controlsContainer.appendChild(nextButton);
 
 function nextQuestion() {
   answerButtonIsClicked = true;
-  const randomIndex = Math.floor(Math.random() * questionArray.length);
 
+  const randomIndex = Math.floor(Math.random() * questionArray.length);
+  const category = document.createElement("p");
   const question = document.createElement("h1");
   const answerContainer = document.createElement("div");
 
+  const categoryText = document.createTextNode(
+    questionArray[Math.floor(randomIndex)].category
+  );
   const questionText = document.createTextNode(
     questionArray[Math.floor(randomIndex)].question
   );
@@ -857,13 +861,14 @@ function nextQuestion() {
     }
   }
   answerIsTreu = false;
-
+  category.appendChild(categoryText);
   question.appendChild(questionText);
 
   question.classList.add("question");
   answerContainer.classList.add("answer-container");
 
   quizContainer.innerHTML = "";
+  quizContainer.appendChild(category);
   quizContainer.appendChild(question);
 
   quizContainer.appendChild(answerContainer);
