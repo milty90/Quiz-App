@@ -806,11 +806,15 @@ const questionArray = [
 
 let answerIsTreu = false;
 let correctAnswer = 0;
+let answerCount = -1;
+let isCorrect = 0;
 let answerButtonIsClicked = false;
 const quizContainer = document.createElement("div");
 const controlsContainer = document.createElement("div");
 const solutionButton = document.createElement("button");
 const nextButton = document.createElement("button");
+const scoreCount = document.createElement("p");
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 quizContainer.classList.add("quiz-container");
 controlsContainer.classList.add("controls");
@@ -822,6 +826,7 @@ nextButton.innerText = "Weiter";
 
 controlsContainer.appendChild(solutionButton);
 controlsContainer.appendChild(nextButton);
+controlsContainer.appendChild(scoreCount);
 
 function nextQuestion() {
   answerButtonIsClicked = true;
@@ -838,8 +843,7 @@ function nextQuestion() {
     questionArray[Math.floor(randomIndex)].question
   );
   const answers = questionArray[Math.floor(randomIndex)].answers;
-  correctAnswer = questionArray[Math.floor(randomIndex)].correct;
-  console.log("Korrekte Antwort:", correctAnswer);
+  isCorrect = questionArray[Math.floor(randomIndex)].correct;
 
   for (let i = 0; i < answers.length; i++) {
     const answerOptionText = document.createTextNode(answers[i]);
@@ -847,18 +851,34 @@ function nextQuestion() {
     answerButton.appendChild(answerOptionText);
     answerButton.classList.add("answer-btn");
     answerContainer.appendChild(answerButton);
-    if (i === correctAnswer) {
-      console.log("Richtig");
+
+    if (i === isCorrect) {
+      console.log("correctAnswer", correctAnswer);
       answerIsTreu = true;
       answerButton.addEventListener("click", () => {
         answerButton.classList.add("correct");
+        correctAnswer += 1;
+
+        showSolution(isCorrect);
+        delay(1000).then(() => {
+          console.log("nächste Frage");
+          nextQuestion();
+        });
       });
+
+      showSolution(isCorrect);
     } else {
       console.log("Falsch");
       answerButton.addEventListener("click", () => {
         answerButton.classList.add("wrong");
+        showSolution(isCorrect);
+        delay(1000).then(() => {
+          nextQuestion();
+        });
       });
     }
+    answerCount += i === 0 ? 1 : 0;
+    scoreCount.innerText = `Punkte: ${correctAnswer} / ${answerCount}`;
   }
   answerIsTreu = false;
   category.appendChild(categoryText);
@@ -877,7 +897,13 @@ function nextQuestion() {
 }
 
 function showSolution() {
-  // Logic to show the solution
+  console.log("korrekte Antwort anzeigen");
+  const answerButtons = document.querySelectorAll(".answer-btn");
+  answerButtons.forEach((button, index) => {
+    if (index === isCorrect) {
+      button.classList.add("solution");
+    }
+  });
 }
 
 nextButton.addEventListener("click", () => {
