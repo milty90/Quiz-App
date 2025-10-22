@@ -42,9 +42,9 @@ async function loadQuestions() {
   try {
     const response = await fetch("./questions.json");
     questionArray = await response.json();
-    console.log("Kérdések betöltve:", questionArray.length);
+    console.log("Fragen geladen:", questionArray.length);
   } catch (error) {
-    console.error("Hiba a kérdések betöltésénél:", error);
+    console.error("Fehler beim Laden der Fragen:", error);
   }
 }
 

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
+:root {
+  --white: #fff;
+}
+
 .body {
   margin: 0;
   padding: 0;
@@ -51,7 +55,7 @@ main {
 .answer-btn {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
-  background-color: #fff;
+  background-color: var(--white);
   font-size: 1.2rem;
   color: #4e61c5;
   border: none;
@@ -72,7 +76,7 @@ main {
 
 .correct {
   background: linear-gradient(#b8ef05, #b4bc07);
-  color: white;
+  color: var(--white);
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: pulse 0.3s linear infinite both;
@@ -80,14 +84,14 @@ main {
 
 .wrong {
   background-color: #f44336;
-  color: white;
+  color: var(--white);
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: shake 0.3s linear infinite both;
 }
 
 .solution {
-  background-color: #fff;
+  background-color: var(--white);
   color: #4e61c5;
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,7 +101,6 @@ main {
 .controls {
   width: 100%;
   margin: 3rem 0 1.5rem 0;
-
   display: flex;
   flex-direction: row;
   align-items: flex-center;
@@ -123,7 +126,7 @@ main {
   font-family: "Source Sans 3", sans-serif;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   background: dodgerblue;
-  color: white;
+  color: var(--white);
   border-radius: 4px;
 }
 
@@ -141,33 +144,39 @@ main {
 .solution-btn:actives {
   transform: translate(0em, 0.2em);
 }
+.score-count {
+  text-align: left;
+}
 
 .countdown-timer {
+  position: sticky;
   font-size: 1.2rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
   margin-left: auto;
   animation: pulse 1s infinite;
+  min-width: 80px;
+  text-align: right;
 }
 
 @keyframes solutionHighlight {
   0% {
-    background-color: #fff;
+    background-color: var(--white);
     transform: scale(1);
   }
   10% {
     background-color: #ff9800;
-    color: #fff;
+    color: var(--white);
   }
   50% {
     transform: scale(1.05);
   }
   90% {
     background-color: #f57c00;
-    color: #fff;
+    color: var(--white);
   }
   100% {
-    background-color: #fff;
+    background-color: var(--white);
     transform: scale(1);
   }
 }
