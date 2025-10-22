@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
 .body {
   margin: 0;
   padding: 0;
 }
+
 main {
   display: flex;
   flex-direction: column;
@@ -10,32 +12,42 @@ main {
   justify-content: center;
   height: 99vh;
   width: 99vw;
-
   box-sizing: border-box;
 }
+
 #quiz-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-family: "Montserrat", sans-serif;
   color: #eee;
   background: linear-gradient(#219eee, #596de8);
   border: 1px solid #eee;
   border-radius: 8px;
-  height: 50%;
+  height: fit-content;
   padding: 0.5rem 4rem 1rem 4rem;
   max-width: 80vw;
   margin: 0 auto;
 }
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-text {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  max-inline-size: 1000px;
+  text-align: center;
+}
+
 .answer-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-
   gap: 2rem;
 }
+
 .answer-btn {
   font-family: "Source Sans 3", sans-serif;
   font-optical-sizing: auto;
@@ -47,12 +59,13 @@ main {
   font-weight: 700;
   font-style: normal;
   width: 30rem;
-  height: 70px;
+  height: fit-content;
   font-size: 1.2rem;
   margin: 10px;
   padding: 10px 20px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .answer-btn:hover {
   animation: grow 0.3s linear infinite both;
 }
@@ -64,6 +77,7 @@ main {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: pulse 0.3s linear infinite both;
 }
+
 .wrong {
   background-color: #f44336;
   color: white;
@@ -78,6 +92,62 @@ main {
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: solutionHighlight 1s ease-in-out both;
+}
+
+.controls {
+  width: 100%;
+  margin: 3rem 0 1.5rem 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.control-left,
+.control-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: bottom;
+  gap: 2rem;
+}
+
+.next-btn,
+.solution-btn {
+  font-size: 1rem;
+  padding: 0.5em 2em;
+  font-weight: 500;
+  border: transparent;
+  font-family: "Source Sans 3", sans-serif;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: dodgerblue;
+  color: white;
+  border-radius: 4px;
+}
+
+.next-btn:hover,
+.solution-btn:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 144, 255, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.next-btn:active,
+.solution-btn:actives {
+  transform: translate(0em, 0.2em);
+}
+
+.countdown-timer {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  margin-left: auto;
+  animation: pulse 1s infinite;
 }
 
 @keyframes solutionHighlight {
@@ -101,6 +171,7 @@ main {
     transform: scale(1);
   }
 }
+
 @keyframes grow {
   0% {
     transform: scale(1);

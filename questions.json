@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "category": "HTML",
+    "question": "Welches Element verwendet man, um einen Abschnitt mit Überschrift und Inhalt semantisch abzutrennen?",
+    "answers": [
+      "<div>",
+      "<section>",
+      "<span>",
+      "<u>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 2,
+    "category": "HTML",
+    "question": "Welches Attribut setzt man bei <img>, um einen Text anzuzeigen, falls das Bild nicht geladen werden kann?",
+    "answers": [
+      "title",
+      "alt",
+      "caption",
+      "description"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 3,
+    "category": "HTML",
+    "question": "Welches Element ist für die Navigation einer Website semantisch geeignet?",
+    "answers": [
+      "<nav>",
+      "<menuitem>",
+      "<aside>",
+      "<main>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "category": "HTML",
+    "question": "Welches Attribut im <a>-Tag bewirkt das Öffnen des Links in einem neuen Tab?",
+    "answers": [
+      "rel=\"new\"",
+      "target=\"_blank\"",
+      "open=\"new\"",
+      "window=\"true\""
+    ],
+    "correct": 1
+  },
+  {
+    "id": 5,
+    "category": "HTML",
+    "question": "Welches Element dient zur Einbettung eines Formulars?",
+    "answers": [
+      "<input>",
+      "<form>",
+      "<fieldset>",
+      "<label>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 6,
+    "category": "HTML",
+    "question": "Wie markiert man in HTML einen Kommentar?",
+    "answers": [
+      "// comment",
+      "<!-- comment -->",
+      "/* comment */",
+      "# comment"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 7,
+    "category": "HTML",
+    "question": "Welches Attribut gibt den Typ eines Eingabefeldes an, z. B. E-Mail?",
+    "answers": [
+      "kind",
+      "type",
+      "format",
+      "inputmode"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 8,
+    "category": "HTML",
+    "question": "Welches Element benutzt man, um eine Liste mit Aufzählungszeichen zu erstellen?",
+    "answers": [
+      "<ol>",
+      "<ul>",
+      "<dl>",
+      "<list>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 9,
+    "category": "HTML",
+    "question": "Mit welchem Meta-Tag legt man die Zeichencodierung auf UTF-8 fest?",
+    "answers": [
+      "<meta charset=\"UTF-8\">",
+      "<meta encoding=\"utf-8\">",
+      "<meta http-equiv=\"encoding\" content=\"utf-8\">",
+      "<meta content-type=\"text/html; charset=utf-8\">"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "category": "HTML",
+    "question": "Welches Element ist am besten geeignet, um einen Seitenfuß darzustellen?",
+    "answers": [
+      "<footer>",
+      "<bottom>",
+      "<section id=\"footer\">",
+      "<aside>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 11,
+    "category": "HTML",
+    "question": "Welches Attribut verbindet ein <label> mit einem Formularelement?",
+    "answers": [
+      "for (mit der id des Controls)",
+      "bind",
+      "aria-labelledby",
+      "ref"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "category": "HTML",
+    "question": "Welches Element verwendet man, um eingebetteten Audio-Inhalt bereitzustellen?",
+    "answers": [
+      "<sound>",
+      "<audio>",
+      "<media>",
+      "<player>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 13,
+    "category": "HTML",
+    "question": "Welches Attribut erlaubt deklaratives Lazy-Loading bei Bildern?",
+    "answers": [
+      "defer",
+      "async",
+      "loading=\"lazy\"",
+      "lazyload"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 14,
+    "category": "HTML",
+    "question": "Welches Element ist geeignet, um alternativen Text für ein Bild bereitzustellen (Zugänglichkeit)?",
+    "answers": [
+      "title",
+      "alt-Attribut im <img>",
+      "<caption>",
+      "<description>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 15,
+    "category": "HTML",
+    "question": "Welches Element kennzeichnet den wichtigsten Inhalt einer Seite?",
+    "answers": [
+      "<main>",
+      "<section>",
+      "<article>",
+      "<header>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 16,
+    "category": "HTML",
+    "question": "Welche Angabe im <form>-Element bestimmt, wohin die Daten gesendet werden?",
+    "answers": [
+      "method",
+      "action",
+      "enctype",
+      "target"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 17,
+    "category": "HTML",
+    "question": "Welches Tag benutzt man, um hervorgehobenen (dringenden) Text semantisch zu markieren?",
+    "answers": [
+      "<strong>",
+      "<em>",
+      "<b>",
+      "<i>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 18,
+    "category": "HTML",
+    "question": "Welches Attribut macht ein Formularfeld erforderlich?",
+    "answers": [
+      "required",
+      "must",
+      "needed",
+      "validate"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "category": "HTML",
+    "question": "Welches Element wird verwendet, um einen eingebetteten YouTube-Player zu integrieren?",
+    "answers": [
+      "<iframe>",
+      "<embed>",
+      "<video>",
+      "<object>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 20,
+    "category": "HTML",
+    "question": "Welches Element ist für tabellarische Daten vorgesehen?",
+    "answers": [
+      "<table>",
+      "<list>",
+      "<grid>",
+      "<div class=\"table\">"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 21,
+    "category": "CSS",
+    "question": "Welche Eigenschaft ändert die Hintergrundfarbe eines Elements?",
+    "answers": [
+      "color",
+      "background-color",
+      "bg",
+      "fill"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 22,
+    "category": "CSS",
+    "question": "Welcher Selektor wählt Elemente mit der Klasse 'active' aus?",
+    "answers": [
+      "#active",
+      ".active",
+      "active",
+      "*[active]"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 23,
+    "category": "CSS",
+    "question": "Welcher Wert macht ein Element unsichtbar, nimmt aber weiterhin Platz im Layout ein?",
+    "answers": [
+      "display: none;",
+      "visibility: hidden;",
+      "opacity: 0;",
+      "hidden: true;"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 24,
+    "category": "CSS",
+    "question": "Welche Eigenschaft bestimmt den Abstand innerhalb eines Elements (innen)?",
+    "answers": [
+      "margin",
+      "padding",
+      "gap",
+      "border"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 25,
+    "category": "CSS",
+    "question": "Wie lautet die Kurzschreibweise für 'margin-top: 10px; margin-right: 5px; margin-bottom: 10px; margin-left: 5px;'?",
+    "answers": [
+      "margin: 10px 5px;",
+      "margin: 10px 5px 10px;",
+      "margin: 10px 5px 10px 5px;",
+      "margin: 5px 10px;"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 26,
+    "category": "CSS",
+    "question": "Welche Eigenschaft ändert die Schriftgröße eines Elements?",
+    "answers": [
+      "font-style",
+      "font-weight",
+      "font-size",
+      "text-size"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 27,
+    "category": "CSS",
+    "question": "Welcher Display-Wert macht ein Element zu einem Flex-Container?",
+    "answers": [
+      "display: block;",
+      "display: inline;",
+      "display: flex;",
+      "display: grid;"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 28,
+    "category": "CSS",
+    "question": "Welche Eigenschaft bestimmt die Anordnung der Flex-Items auf der Hauptachse?",
+    "answers": [
+      "align-items",
+      "justify-content",
+      "flex-direction",
+      "flex-wrap"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 29,
+    "category": "CSS",
+    "question": "Wie kann man einen runden Rahmen (Kreis) für ein Quadrat erstellen?",
+    "answers": [
+      "border-radius: 50%;",
+      "border-radius: 10px;",
+      "shape: circle;",
+      "clip-path: square();"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 30,
+    "category": "CSS",
+    "question": "Welche Einheit ist relativ zur Schriftgröße des root-Elements?",
+    "answers": [
+      "em",
+      "rem",
+      "vw",
+      "px"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 31,
+    "category": "CSS",
+    "question": "Welcher Pseudoklassen-Selektor wird beim Hover eines Elements angewendet?",
+    "answers": [
+      ":active",
+      ":focus",
+      ":hover",
+      ":visited"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 32,
+    "category": "CSS",
+    "question": "Wie verhindert man, dass Floating-Elemente das Elternelement kollabieren lassen?",
+    "answers": [
+      "overflow: auto; auf das Elternelement setzen",
+      "display: inline;",
+      "float: none;",
+      "position: absolute;"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 33,
+    "category": "CSS",
+    "question": "Welche Eigenschaft legt die Sichtbarkeit eines Elements in der Druckansicht fest?",
+    "answers": [
+      "display",
+      "visibility",
+      "content",
+      "@media print { display: none; }"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 34,
+    "category": "CSS",
+    "question": "Welches Attribut in CSS lädt eine externe Schriftart?",
+    "answers": [
+      "@font-face",
+      "@import-font",
+      "font-url",
+      "font-source"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 35,
+    "category": "CSS",
+    "question": "Welche Eigenschaft beeinflusst die Deckkraft eines Elements inklusive Inhalt?",
+    "answers": [
+      "opacity",
+      "transparency",
+      "filter: alpha",
+      "visibility"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 36,
+    "category": "CSS",
+    "question": "Welcher Wert von 'position' entfernt ein Element aus dem normalen Dokumentenfluss?",
+    "answers": [
+      "static",
+      "relative",
+      "absolute",
+      "inherit"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 37,
+    "category": "CSS",
+    "question": "Welcher Selektor wählt alle direkten Kinder eines Elements aus?",
+    "answers": [
+      "element child",
+      "element > child",
+      "element + child",
+      "element ~ child"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 38,
+    "category": "CSS",
+    "question": "Wie kann man in CSS einen Schatten hinter einem Element erzeugen?",
+    "answers": [
+      "box-shadow",
+      "text-shadow",
+      "drop-shadow",
+      "shadow-box"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 39,
+    "category": "CSS",
+    "question": "Welche Eigenschaft steuert, wie Zeilen innerhalb eines Elements umgebrochen werden?",
+    "answers": [
+      "word-wrap / overflow-wrap",
+      "line-height",
+      "text-indent",
+      "white-space"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 40,
+    "category": "CSS",
+    "question": "Welcher Media-Query-Ausdruck trifft zu für Bildschirme mit maximaler Breite von 600px?",
+    "answers": [
+      "@media (min-width: 600px)",
+      "@media (max-width: 600px)",
+      "@media screen and (width: 600px)",
+      "@media only screen (600px)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 41,
+    "category": "JavaScript",
+    "question": "Wie erstellt man eine Funktion in JavaScript, die 'Hello' in der Konsole ausgibt?",
+    "answers": [
+      "function greet() { console.log('Hello'); }",
+      "def greet() { print('Hello') }",
+      "func greet() { console.log('Hello'); }",
+      "create function greet() { alert('Hello'); }"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 42,
+    "category": "JavaScript",
+    "question": "Welcher Ausdruck überprüft, ob 'a' gleich 'b' und dabei Typen berücksichtigt?",
+    "answers": [
+      "a == b",
+      "a != b",
+      "a === b",
+      "a = b"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 43,
+    "category": "JavaScript",
+    "question": "Wie fügt man einem Array am Ende ein Element hinzu?",
+    "answers": [
+      "array.push(element)",
+      "array.add(element)",
+      "array.insert(end, element)",
+      "array[end] = element"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 44,
+    "category": "JavaScript",
+    "question": "Welche Methode konvertiert ein Objekt in einen JSON-String?",
+    "answers": [
+      "JSON.parse(obj)",
+      "JSON.stringify(obj)",
+      "obj.toJSON()",
+      "toString(obj)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 45,
+    "category": "JavaScript",
+    "question": "Wie definiert man eine Arrow-Funktion, die x verdoppelt?",
+    "answers": [
+      "const f = x => x * 2;",
+      "function f(x) { return x * 2 }",
+      "var f = function(x) { x * 2 }",
+      "let f = (x) => { x * 2 }"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 46,
+    "category": "JavaScript",
+    "question": "Welches Schlüsselwort verwendet man, um eine asynchrone Funktion zu deklarieren?",
+    "answers": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 47,
+    "category": "JavaScript",
+    "question": "Wie entfernt man das erste Element eines Arrays?",
+    "answers": [
+      "array.pop()",
+      "array.shift()",
+      "array.splice(0,1)",
+      "array.delete(0)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 48,
+    "category": "JavaScript",
+    "question": "Welches Objekt liefert Zugriff auf das aktuelle Dokument in Browser-Umgebung?",
+    "answers": [
+      "window",
+      "document",
+      "navigator",
+      "dom"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 49,
+    "category": "JavaScript",
+    "question": "Wie prüft man, ob eine Variable 'x' den Wert undefined hat?",
+    "answers": [
+      "if (x === undefined)",
+      "if (x == null)",
+      "if (type(x) === 'undefined')",
+      "if (x.equals(undefined))"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 50,
+    "category": "JavaScript",
+    "question": "Welches Event tritt auf, wenn die Seite vollständig geladen ist (inkl. Bilder)?",
+    "answers": [
+      "DOMContentLoaded",
+      "load",
+      "ready",
+      "init"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 51,
+    "category": "JavaScript",
+    "question": "Wie kann man eine Funktion als Callback nach 500ms Verzögerung aufrufen?",
+    "answers": [
+      "setTimeout(fn, 500);",
+      "setInterval(fn, 500);",
+      "delay(fn, 500);",
+      "sleep(500).then(fn);"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 52,
+    "category": "JavaScript",
+    "question": "Welche Schleife iteriert über die Werte eines Arrays direkt?",
+    "answers": [
+      "for (let i in array) {}",
+      "for (let v of array) {}",
+      "array.foreach(v => {})",
+      "for (let i = 0; i < array.length; i++) {}"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 53,
+    "category": "JavaScript",
+    "question": "Welcher Operator gibt den Typ eines Operanden als String zurück?",
+    "answers": [
+      "type",
+      "typeof",
+      "instanceof",
+      "getType"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 54,
+    "category": "JavaScript",
+    "question": "Wie fügt man zwei Strings in JS zusammen (z. B. 'a' und 'b')?",
+    "answers": [
+      "a.concat(b)",
+      "a + b",
+      "`a ${b}`",
+      "Alle oben sind möglich"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 55,
+    "category": "JavaScript",
+    "question": "Welche Methode prüft, ob ein Array ein bestimmtes Element enthält?",
+    "answers": [
+      "array.findIndex(el => el === x) !== -1",
+      "array.includes(x)",
+      "array.indexOf(x) !== -1",
+      "Alle oben sind gültige Lösungen"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 56,
+    "category": "JavaScript",
+    "question": "Wie erstellt man ein neues Promise, das nach 1s resolved?",
+    "answers": [
+      "new Promise(resolve => setTimeout(resolve, 1000))",
+      "Promise.delay(1000).then()",
+      "new Promise(resolve => resolve(1000))",
+      "Promise.resolveAfter(1000)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 57,
+    "category": "JavaScript",
+    "question": "Wie bekommt man die Anzahl der Eigenschaften eines Objekts 'obj'?",
+    "answers": [
+      "obj.length",
+      "Object.keys(obj).length",
+      "Object.size(obj)",
+      "obj.count"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 58,
+    "category": "JavaScript",
+    "question": "Welches Schlüsselwort deklariert eine Konstante?",
+    "answers": [
+      "let",
+      "const",
+      "var",
+      "static"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 59,
+    "category": "JavaScript",
+    "question": "Welcher Ausdruck erzeugt ein Array von Zahlen 1 bis 3 mithilfe von Spread und Array.from?",
+    "answers": [
+      "Array.from({length:3}, (_,i)=>i+1)",
+      "[...Array(3).keys()]",
+      "new Array(1,2,3)",
+      "Array.range(1,3)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 60,
+    "category": "JavaScript",
+    "question": "Welche Methode transformiert jedes Element eines Arrays und liefert ein neues Array?",
+    "answers": [
+      "map",
+      "filter",
+      "reduce",
+      "forEach"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 61,
+    "category": "HTML",
+    "question": "Welches Attribut nutzt man, um einen Link als Download zu kennzeichnen?",
+    "answers": [
+      "download",
+      "rel=\"download\"",
+      "target=\"_download\"",
+      "type=\"file\""
+    ],
+    "correct": 0
+  },
+  {
+    "id": 62,
+    "category": "HTML",
+    "question": "Welches Element verwendet man, um eine Eingabe mehrzeilig zu erlauben?",
+    "answers": [
+      "<input type=\"text\" multiple>",
+      "<textarea>",
+      "<input type=\"textarea\">",
+      "<multiline>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 63,
+    "category": "HTML",
+    "question": "Welches Attribut macht ein Feld schreibgeschützt?",
+    "answers": [
+      "locked",
+      "readonly",
+      "disabled",
+      "immutable"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 64,
+    "category": "HTML",
+    "question": "Welches Tag nutzt man, um einen Haupttitel auf einer Seite zu kennzeichnen?",
+    "answers": [
+      "<h1>",
+      "<title>",
+      "<header>",
+      "<strong>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 65,
+    "category": "CSS",
+    "question": "Wie zentriert man horizontal ein Blockelement mit fester Breite?",
+    "answers": [
+      "margin: 0 auto;",
+      "text-align: center;",
+      "align-self: center;",
+      "justify-content: center;"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 66,
+    "category": "CSS",
+    "question": "Welches Attribut macht Schrift kursiv?",
+    "answers": [
+      "font-style: italic;",
+      "font-weight: bold;",
+      "text-decoration: underline;",
+      "font-variant: small-caps;"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 67,
+    "category": "CSS",
+    "question": "Wie legt man die maximale Breite eines Elements fest, damit es nicht breiter als 900px wird?",
+    "answers": [
+      "width: 900px;",
+      "max-width: 900px;",
+      "min-width: 900px;",
+      "limit-width: 900px;"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 68,
+    "category": "CSS",
+    "question": "Welcher Wert für 'display' zeigt Elemente als Block an, aber nebeneinander wenn möglich?",
+    "answers": [
+      "display: inline;",
+      "display: inline-block;",
+      "display: block-inline;",
+      "display: flow-root;"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 69,
+    "category": "CSS",
+    "question": "Welche Eigenschaft setzt die Farbe des Textes?",
+    "answers": [
+      "background-color",
+      "color",
+      "text-color",
+      "font-color"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 70,
+    "category": "JavaScript",
+    "question": "Welches Schlüsselwort deklariert eine variable mit Funktionsscope (veraltet empfohlen nicht mehr)?",
+    "answers": [
+      "var",
+      "let",
+      "const",
+      "function"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 71,
+    "category": "JavaScript",
+    "question": "Welche Methode beendet die Ausführung eines Array-Iterators vorzeitig?",
+    "answers": [
+      "return",
+      "break",
+      "continue",
+      "stop"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 72,
+    "category": "JavaScript",
+    "question": "Wie erhält man die Elemente eines NodeLists in ein echtes Array?",
+    "answers": [
+      "Array.from(nodeList)",
+      "nodeList.toArray()",
+      "[...nodeList]",
+      "Beide 0 und 2 sind korrekt"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 73,
+    "category": "JavaScript",
+    "question": "Welcher Ausdruck erzeugt eine Zahl aus einem String '42'?",
+    "answers": [
+      "Number('42')",
+      "parseInt('42', 10)",
+      "+'42'",
+      "Alle oben sind möglich"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 74,
+    "category": "JavaScript",
+    "question": "Was liefert Array.prototype.filter zurück?",
+    "answers": [
+      "Ein neues Array mit Elementen, die die Bedingung erfüllen",
+      "Das erste Element, das die Bedingung erfüllt",
+      "Die Anzahl der Elemente, die die Bedingung erfüllen",
+      "Nichts (void)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 75,
+    "category": "HTML",
+    "question": "Welches Attribut hilft beim Angeben der Sprache eines Dokuments (z. B. Deutsch)?",
+    "answers": [
+      "<html lang=\"de\">",
+      "<meta language=\"de\">",
+      "<body lang=\"de\">",
+      "<lang>de</lang>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 76,
+    "category": "CSS",
+    "question": "Welche Eigenschaft sorgt dafür, dass Text nicht überläuft, sondern mit '…' abgeschnitten wird?",
+    "answers": [
+      "text-overflow: ellipsis; plus overflow: hidden; white-space: nowrap;",
+      "overflow: visible;",
+      "word-break: break-all;",
+      "text-wrap: truncate;"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 77,
+    "category": "JavaScript",
+    "question": "Welche Anweisung wirft eine Ausnahme (Exception)?",
+    "answers": [
+      "throw new Error('Fehler')",
+      "raise('Fehler')",
+      "error('Fehler')",
+      "reject('Fehler')"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 78,
+    "category": "JavaScript",
+    "question": "Wie fängt man Fehler in einer async/await Funktion ab?",
+    "answers": [
+      "try { await foo(); } catch (e) { ... }",
+      "await foo().catch(e => ...)",
+      "Beide Varianten sind möglich",
+      "Fehler können nicht gefangen werden"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 79,
+    "category": "HTML",
+    "question": "Welches Attribut an <script> verhindert, dass es das Parsing blockiert und führt das Script erst später aus?",
+    "answers": [
+      "async",
+      "defer",
+      "lazy",
+      "postpone"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 80,
+    "category": "CSS",
+    "question": "Welche Pseudoklasse trifft Elemente an, die gerade den Fokus oder ein Unterelement mit Fokus haben?",
+    "answers": [
+      ":focus",
+      ":focus-within",
+      ":active",
+      ":focus-visible"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 81,
+    "category": "JavaScript",
+    "question": "Welcher Operator kombiniert zwei Bedingungen logisch (UND)?",
+    "answers": [
+      "||",
+      "&&",
+      "&",
+      "and"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 82,
+    "category": "JavaScript",
+    "question": "Welche Methode stoppt die Ausführung eines Timers, der mit setInterval gestartet wurde?",
+    "answers": [
+      "clearTimeout(id)",
+      "clearInterval(id)",
+      "stopInterval(id)",
+      "cancel(id)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 83,
+    "category": "HTML",
+    "question": "Welches Element kennzeichnet ein eigenständiges, in sich geschlossenes Stück Inhalt (z. B. Blogpost)?",
+    "answers": [
+      "<section>",
+      "<article>",
+      "<div>",
+      "<aside>"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 84,
+    "category": "CSS",
+    "question": "Wie sorgt man dafür, dass ein Bild immer seine Proportionen behält und die maximale Breite des Containers nicht überschreitet?",
+    "answers": [
+      "width: auto; height: auto;",
+      "max-width: 100%; height: auto;",
+      "width: 100%; height: 100%;",
+      "object-fit: cover;"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 85,
+    "category": "JavaScript",
+    "question": "Wie ruft man eine Funktion 'fn' mit dem Kontext 'obj' auf (this inside fn = obj)?",
+    "answers": [
+      "fn.bind(obj)()",
+      "fn.call(obj)",
+      "fn.apply(obj)",
+      "Alle oben können verwendet werden"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 86,
+    "category": "JavaScript",
+    "question": "Welche Methode gibt den Typ eines Objekts genauer an als typeof (z. B. Array)?",
+    "answers": [
+      "Object.prototype.toString.call(value)",
+      "value.type()",
+      "value.className",
+      "getType(value)"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 87,
+    "category": "HTML",
+    "question": "Welches Element ist geeignet, um ein Dialogfenster (z. B. Modal) semantisch zu definieren?",
+    "answers": [
+      "<dialog>",
+      "<modal>",
+      "<window>",
+      "<popup>"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 88,
+    "category": "CSS",
+    "question": "Welcher Wert für 'display' macht ein Inline-Element zu einem Block-Element?",
+    "answers": [
+      "display: inline;",
+      "display: block;",
+      "display: inline-block;",
+      "display: flow-root;"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 89,
+    "category": "JavaScript",
+    "question": "Wie kann man einen tiefen Vergleich (Deep Equal) einfacher Objekte am schnellsten durchführen (einfacher Fall)?",
+    "answers": [
+      "JSON.stringify(obj1) === JSON.stringify(obj2)",
+      "obj1 === obj2",
+      "for-in Schleife manuell vergleichen",
+      "Es gibt keine Methode"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 90,
+    "category": "JavaScript",
+    "question": "Welche Methode entfernt ein Element an einer bestimmten Position aus einem Array?",
+    "answers": [
+      "array.pop(index)",
+      "array.splice(index, 1)",
+      "array.delete(index)",
+      "array.remove(index)"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 91,
+    "category": "HTML",
+    "question": "Welches Attribut verwendet man, um eine Seite für Suchmaschinen mit einer Beschreibung zu versehen?",
+    "answers": [
+      "<meta name=\"description\" content=\"...\">",
+      "<meta description=\"...\">",
+      "<meta seo=\"description\">",
+      "<meta itemprop=\"description\">"
+    ],
+    "correct": 0
+  },
+  {
+    "id": 92,
+    "category": "CSS",
+    "question": "Welche Eigenschaft ändert den Abstand zwischen Zeichen in Text?",
+    "answers": [
+      "line-height",
+      "letter-spacing",
+      "word-spacing",
+      "text-indent"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 93,
+    "category": "JavaScript",
+    "question": "Welches Statement beendet eine Funktion und gibt optional einen Wert zurück?",
+    "answers": [
+      "stop",
+      "return",
+      "exit",
+      "break"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 94,
+    "category": "JavaScript",
+    "question": "Wie liest man das erste DOM-Element mit der Klasse 'item' aus?",
+    "answers": [
+      "document.getElementsByClassName('item')[0]",
+      "document.querySelector('.item')",
+      "document.querySelectorAll('.item')[0]",
+      "Alle oben sind gültige Optionen"
+    ],
+    "correct": 3
+  },
+  {
+    "id": 95,
+    "category": "CSS",
+    "question": "Welche Eigenschaft steuert die Dicke einer Rahmenlinie?",
+    "answers": [
+      "border-style",
+      "border-color",
+      "border-width",
+      "border-radius"
+    ],
+    "correct": 2
+  },
+  {
+    "id": 96,
+    "category": "JavaScript",
+    "question": "Welche Funktion erzeugt eine neue Kopie eines Arrays (flach)?",
+    "answers": [
+      "array.clone()",
+      "array.slice()",
+      "array.copy()",
+      "array.duplicate()"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 97,
+    "category": "HTML",
+    "question": "Welches Attribut an <a> gibt an, dass der Link keine Indexierung durch Suchmaschinen erhalten soll?",
+    "answers": [
+      "rel=\"nofollow\"",
+      "rel=\"noopener\"",
+      "rel=\"noreferrer\"",
+      "rel=\"noindex\""
+    ],
+    "correct": 0
+  },
+  {
+    "id": 98,
+    "category": "CSS",
+    "question": "Was macht 'display: none' mit einem Element?",
+    "answers": [
+      "Es blendet das Element aus, nimmt aber Platz ein",
+      "Es entfernt das Element aus dem Layoutfluss und es nimmt keinen Platz ein",
+      "Es macht das Element unsichtbar, bleibt aber interaktiv",
+      "Es ändert nur die Sichtbarkeit im Druckmodus"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 99,
+    "category": "JavaScript",
+    "question": "Welches Array-Prototype-Methodenpaar hilft beim Reduzieren eines Arrays zu einem einzigen Wert?",
+    "answers": [
+      "map & filter",
+      "reduce & reduceRight",
+      "forEach & map",
+      "push & pop"
+    ],
+    "correct": 1
+  },
+  {
+    "id": 100,
+    "category": "JavaScript",
+    "question": "Welche Methode holt JSON von einer URL und liefert ein Promise mit dem geparsten Objekt?",
+    "answers": [
+      "fetch(url).then(r => r.json())",
+      "XMLHttpRequest.getJSON(url)",
+      "axios.getJSON(url)",
+      "getJSON(url)"
+    ],
+    "correct": 0
+  }
+]
