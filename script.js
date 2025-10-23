@@ -134,6 +134,7 @@ function nextQuestion() {
 
   answerCount++;
   scoreCount.innerText = `Korrekte Antworten: ${correctAnswer} von ${answerCount}`;
+
   answerIsTreu = false;
   category.appendChild(categoryText);
   question.appendChild(questionText);
@@ -150,7 +151,7 @@ function nextQuestion() {
 }
 
 function showSolution() {
-  //console.log("k. A. anzeigen");
+  //console.log("k.A. anzeigen");
   const answerButtons = document.querySelectorAll(".answer-btn");
   answerButtons.forEach((button, index) => {
     if (index === isCorrect) {

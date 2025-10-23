@@ -2,6 +2,8 @@
 
 :root {
   --white: #fff;
+  --red: #f44336;
+  --blue: #4e61c5;
 }
 
 .body {
@@ -30,6 +32,7 @@ main {
   max-width: 80vw;
   margin: 0 auto;
 }
+
 .quiz-container {
   display: flex;
   flex-direction: column;
@@ -57,7 +60,7 @@ main {
   font-optical-sizing: auto;
   background-color: var(--white);
   font-size: 1.2rem;
-  color: #4e61c5;
+  color: var(--blue);
   border: none;
   border-radius: 8px;
   font-weight: 700;
@@ -83,7 +86,7 @@ main {
 }
 
 .wrong {
-  background-color: #f44336;
+  background-color: var(--red);
   color: var(--white);
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -92,7 +95,7 @@ main {
 
 .solution {
   background-color: var(--white);
-  color: #4e61c5;
+  color: var(--blue);
   border: none;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   animation: solutionHighlight 1s ease-in-out both;
@@ -161,7 +164,7 @@ main {
 
 .countdown-timer.warning {
   animation: pulse 1s infinite;
-  color: #ff4444;
+  color: var(--red);
   font-weight: 700;
 }
 
