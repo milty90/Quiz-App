@@ -144,6 +144,7 @@ main {
 .solution-btn:actives {
   transform: translate(0em, 0.2em);
 }
+
 .score-count {
   text-align: left;
 }
@@ -154,9 +155,14 @@ main {
   font-weight: 600;
   color: var(--white);
   margin-left: auto;
-  animation: pulse 1s infinite;
   min-width: 80px;
   text-align: right;
+}
+
+.countdown-timer.warning {
+  animation: pulse 1s infinite;
+  color: #ff4444;
+  font-weight: 700;
 }
 
 @keyframes solutionHighlight {
