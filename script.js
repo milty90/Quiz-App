@@ -1,48 +1,26 @@
 let questionArray = [];
-let answerIsTreu = false;
+let askedQuestions = [];
+let answerHistory = [];
+let answerIsTrue = false;
 let correctAnswer = 0;
 let answerCount = -1;
 let isCorrect = 0;
 let answerButtonIsClicked = false;
-let timer = 30;
+const maxTime = 30;
+let timer = maxTime;
 let timerInterval = null;
 const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-const quizContainer = document.createElement("div");
-const controlsContainer = document.createElement("div");
-const controlLeftContainer = document.createElement("div");
-const controlRightContainer = document.createElement("div");
-const solutionButton = document.createElement("button");
-const nextButton = document.createElement("button");
-const scoreCount = document.createElement("p");
-const countDownTimer = document.createElement("p");
-
-quizContainer.classList.add("quiz-container");
-controlsContainer.classList.add("controls");
-controlLeftContainer.classList.add("control-left");
-controlRightContainer.classList.add("control-right");
-scoreCount.classList.add("score-count");
-solutionButton.classList.add("solution-btn");
-nextButton.classList.add("next-btn");
-countDownTimer.classList.add("countdown-timer");
-
-solutionButton.innerText = "Lösung";
-nextButton.innerText = "Weiter";
-countDownTimer.innerText = `Zeit: ${timer}s`;
-
-controlLeftContainer.appendChild(solutionButton);
-controlLeftContainer.appendChild(nextButton);
-controlRightContainer.appendChild(scoreCount);
-controlRightContainer.appendChild(countDownTimer);
-
-controlsContainer.appendChild(controlLeftContainer);
-controlsContainer.appendChild(controlRightContainer);
+const quizContainer = document.querySelector(".quiz-container");
+const solutionButton = document.querySelector(".solution-btn");
+const nextButton = document.querySelector(".next-btn");
+const scoreCount = document.querySelector(".score-count");
+const countDownTimer = document.querySelector(".countdown-timer");
 
 async function loadQuestions() {
   try {
     const response = await fetch("./questions.json");
     questionArray = await response.json();
-    // console.log("Fragen geladen:", questionArray.length);
   } catch (error) {
     console.error("Fehler beim Laden der Fragen:", error);
   }
@@ -53,32 +31,41 @@ function nextQuestion() {
     clearInterval(timerInterval);
   }
 
-  timer = 30;
+  timer = maxTime;
   answerButtonIsClicked = false;
   countDownTimer.classList.remove("warning");
 
-  const randomIndex = Math.floor(Math.random() * questionArray.length);
+  if (askedQuestions.length >= questionArray.length) {
+    alert("Alle Fragen wurden gestellt! Quiz beendet.");
+    return;
+  }
+
+  let randomIndex;
+  let randomQuestion;
+
+  do {
+    randomIndex = Math.floor(Math.random() * questionArray.length);
+    randomQuestion = questionArray[randomIndex];
+  } while (askedQuestions.includes(randomQuestion.id));
+
   const category = document.createElement("p");
   const question = document.createElement("p");
   const answerContainer = document.createElement("div");
   question.classList.add("question-text");
 
-  const categoryText = document.createTextNode(
-    questionArray[Math.floor(randomIndex)].category
-  );
-  const questionText = document.createTextNode(
-    questionArray[Math.floor(randomIndex)].question
-  );
-  const answers = questionArray[Math.floor(randomIndex)].answers;
-  isCorrect = questionArray[Math.floor(randomIndex)].correct;
+  const categoryText = document.createTextNode(randomQuestion.category);
+  const questionText = document.createTextNode(randomQuestion.question);
+
+  const answers = randomQuestion.answers;
+  isCorrect = randomQuestion.correct;
+
+  askedQuestions.push(randomQuestion.id);
 
   timerInterval = setInterval(() => {
     countDownTimer.innerText = `Zeit: ${timer}s`;
 
     if (timer <= 7) {
       countDownTimer.classList.add("warning");
-    } else {
-      countDownTimer.classList.remove("warning");
     }
 
     if (timer <= 0 && !answerButtonIsClicked) {
@@ -99,15 +86,13 @@ function nextQuestion() {
     answerContainer.appendChild(answerButton);
 
     if (i === isCorrect) {
-      //console.log("correct", correctAnswer);
-      answerIsTreu = true;
+      answerIsTrue = true;
       answerButton.addEventListener("click", () => {
         if (!answerButtonIsClicked) {
           answerButtonIsClicked = true;
           clearInterval(timerInterval);
           answerButton.classList.add("correct");
           correctAnswer += 1;
-          //alert("Richtig!");
           showSolution(isCorrect);
           delay(2000).then(() => {
             console.log("nächste Frage");
@@ -122,7 +107,6 @@ function nextQuestion() {
           answerButtonIsClicked = true;
           clearInterval(timerInterval);
           answerButton.classList.add("wrong");
-          //alert("Falsch!");
           showSolution(isCorrect);
           delay(2000).then(() => {
             nextQuestion();
@@ -135,7 +119,7 @@ function nextQuestion() {
   answerCount++;
   scoreCount.innerText = `Korrekte Antworten: ${correctAnswer} von ${answerCount}`;
 
-  answerIsTreu = false;
+  answerIsTrue = false;
   category.appendChild(categoryText);
   question.appendChild(questionText);
 
@@ -145,13 +129,10 @@ function nextQuestion() {
   quizContainer.innerHTML = "";
   quizContainer.appendChild(category);
   quizContainer.appendChild(question);
-
   quizContainer.appendChild(answerContainer);
-  quizContainer.appendChild(controlsContainer);
 }
 
 function showSolution() {
-  //console.log("k.A. anzeigen");
   const answerButtons = document.querySelectorAll(".answer-btn");
   answerButtons.forEach((button, index) => {
     if (index === isCorrect) {
@@ -171,5 +152,4 @@ solutionButton.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", async () => {
   await loadQuestions();
   nextQuestion();
-  document.getElementById("quiz-container").appendChild(quizContainer);
 });
